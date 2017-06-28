@@ -2,27 +2,52 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.2.
 
-## Development server
+### First stack trace
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```
+webpackJsonp.../../../../../src/app/app.component.ts.AppComponent.clicked (app.component.ts:10)
+(anonymous) (AppComponent.html:1)
+handleEvent (core.es5.js:12047)
+callWithDebugContext (core.es5.js:13506)
+debugHandleEvent (core.es5.js:13094)
+dispatchEvent (core.es5.js:8659)
+(anonymous) (core.es5.js:10821)
+schedulerFn (core.es5.js:3647)
+webpackJsonp.../../../../rxjs/Subscriber.js.SafeSubscriber.__tryOrUnsub (Subscriber.js:238)
+webpackJsonp.../../../../rxjs/Subscriber.js.SafeSubscriber.next (Subscriber.js:185)
+webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber._next (Subscriber.js:125)
+webpackJsonp.../../../../rxjs/Subscriber.js.Subscriber.next (Subscriber.js:89)
+webpackJsonp.../../../../rxjs/Subject.js.Subject.next (Subject.js:55)
+webpackJsonp.../../../core/@angular/core.es5.js.EventEmitter.emit (core.es5.js:3621)
+webpackJsonp.../../../../../src/app/test-button/test-button.component.ts.TestButtonComponent.clicked (test-button.component.ts:18)
+(anonymous) (TestButtonComponent.html:1)
+handleEvent (core.es5.js:12047)
+callWithDebugContext (core.es5.js:13506)
+debugHandleEvent (core.es5.js:13094)
+dispatchEvent (core.es5.js:8659)
+(anonymous) (core.es5.js:9270)
+(anonymous) (platform-browser.es5.js:2668)
+webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invokeTask (zone.js:424)
+onInvokeTask (core.es5.js:3924)
+webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invokeTask (zone.js:423)
+webpackJsonp.../../../../zone.js/dist/zone.js.Zone.runTask (zone.js:191)
+ZoneTask.invoke (zone.js:486)
+```
 
-## Code scaffolding
+### Second stack trace
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```
+webpackJsonp.../../../../../src/app/app.component.ts.AppComponent.clicked (app.component.ts:10)
+(anonymous) (AppComponent.html:1)
+handleEvent (core.es5.js:12047)
+callWithDebugContext (core.es5.js:13506)
+debugHandleEvent (core.es5.js:13094)
+dispatchEvent (core.es5.js:8659)
+(anonymous) (core.es5.js:9270)
+(anonymous) (platform-browser.es5.js:2668)
+webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invokeTask (zone.js:424)
+onInvokeTask (core.es5.js:3924)
+webpackJsonp.../../../../zone.js/dist/zone.js.ZoneDelegate.invokeTask (zone.js:423)
+webpackJsonp.../../../../zone.js/dist/zone.js.Zone.runTask (zone.js:191)
+ZoneTask.invoke (zone.js:486)
+```
