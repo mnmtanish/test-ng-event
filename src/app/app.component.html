@@ -1,1 +1,7 @@
-<app-test-button (click)="clicked($event)">Test Button</app-test-button>
+<app-test-button
+  (click)="clicked($event)"
+  (custom-event-a)="clicked($event)"
+  (custom-event-b)="clicked($event)"
+  (custom-event-c)="clicked($event)">
+  Test Button
+</app-test-button>
