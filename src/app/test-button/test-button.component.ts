@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Output, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-test-button',
@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test-button.component.css']
 })
 export class TestButtonComponent implements OnInit {
+  @Output()
+  click: EventEmitter<MouseEvent>;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
+    this.click = new EventEmitter<MouseEvent>();
   }
 
+  clicked(e: MouseEvent) {
+    e.preventDefault();
+    this.click.emit(e);
+  }
+
+  ngOnInit() {
+    // ...
+  }
 }
