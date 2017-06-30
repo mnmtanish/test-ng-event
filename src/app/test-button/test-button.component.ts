@@ -14,7 +14,6 @@ export class TestButtonComponent implements OnInit {
   }
 
   clicked(e: MouseEvent) {
-    e.preventDefault();
     this.click.emit(e);
   }
 
